@@ -3,8 +3,8 @@ project "glfw"
     language "C"
     staticruntime "off"
 
-    targetdir ("../Binaries/" .. OutputDir .. "/%{prj.name}")
-    objdir ("../Binaries/Intermediates/" .. OutputDir .. "/%{prj.name}")
+    targetdir ("%{wks.location}/bin/" .. OutputDir .. "/%{prj.name}")
+    objdir ("%{wks.location}/bin/int/" .. OutputDir .. "/%{prj.name}")
 
     defines
     {
